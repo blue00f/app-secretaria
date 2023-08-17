@@ -1,12 +1,14 @@
 import React from "react"
-import Button from "./components/Button/Button"
+import Login from "./components/Login/Login"
+import "./index.css"
 
 function App() {
   return (
-    <div>
-      <Button></Button>
-    </div>
+    <>
+      <Login />
+    </>
   )
 }
 
 export default App
+
