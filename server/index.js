@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
+import { createConnection } from 'mysql2';
 const server = express();
-const mysql = require('mysql2');
 
 require('dotenv').config();
 console.log(process.env);
@@ -20,7 +20,7 @@ server.listen(3000, () => {
 // obtener el cliente
 
 // crea la conexión a la base de datos
-const connection = mysql.createConnection({
+const connection = createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
