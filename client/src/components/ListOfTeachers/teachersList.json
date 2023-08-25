@@ -1,19 +1,59 @@
-
-[
-    {
-      "nombre": "David",
-      "apellido": "Araujo",
-      "dni": 94949492
-    },
-    {
-        "nombre": "Santiago",
-        "apellido": "Gonzalez",
-        "dni": 48484884
-    },
-    {
-        "nombre": "Ivan",
-        "apellido": "Rre",
-        "dni": 4882184
-    }
+{
+  "profesores": [
+      {
+          "nombre": "David",
+          "apellido": "Araujo",
+          "dni": 94949492
+      },
+      {
+          "nombre": "Santiago",
+          "apellido": "Gonzalez",
+          "dni": 48484884
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      },
+      {
+          "nombre": "Ivan",
+          "apellido": "Rre",
+          "dni": 4882184
+      }
   ]
-  
+}

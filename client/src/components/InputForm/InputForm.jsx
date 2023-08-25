@@ -1,11 +1,11 @@
-import { useHandleSubmit } from "../Hooks/useHandleSubmit"
+import useHandleSubmit from "../../hooks/useHandleSubmit"
 
 function InputForm() {
   const { handleSubmit } = useHandleSubmit()
 
   return (
     <section className="max-w-full border border-black-300 p-2 text-center">
-      <form onSubmit={handleSubmit} className="grid grid-cols-4">
+      <form onSubmit={handleSubmit} className="grid grid-cols-4 px-48">
         <div className="ml-16">
           <label htmlFor="" className="font-medium text-gray-700 mr-3">
             Nombre
@@ -17,7 +17,7 @@ function InputForm() {
           />
         </div>
 
-        <div className=" ml-16 ">
+        <div className="ml-16">
           <label htmlFor="" className="font-medium text-gray-700 mr-3">
             Apellido
           </label>

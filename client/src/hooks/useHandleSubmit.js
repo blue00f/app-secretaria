@@ -7,7 +7,7 @@ function useHandleSubmit(value) {
     console.log("Formulario enviado")
   }
 
-  return { handleSubmit }
+  return handleSubmit
 }
 
 export default useHandleSubmit
