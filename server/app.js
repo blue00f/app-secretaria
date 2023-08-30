@@ -1,25 +1,18 @@
 import express from 'express';
 import { createConnection } from 'mysql2';
-const server = express();
+import 'dotenv/config';
 
-require('dotenv').config();
-console.log(process.env);
+const app = express();
+const PORT = process.env.PORT ?? 1234;
 
-server.get('/', (req, res) => {
-  res.send('<h1>Home</h1>');
+app.get('/', (req, res) => {
+  res.send('<h1>HOLA Q TAL</h1>');
 });
 
-server.get('/login', (req, res) => {
+app.get('/login', (req, res) => {
   res.send('<h1>Login</h1>');
 });
 
-server.listen(3000, () => {
-  console.log('Servidor en funcionamiento en el puerto 3000');
-});
-
-// obtener el cliente
-
-// crea la conexión a la base de datos
 const connection = createConnection({
   host: process.env.DB_HOST,
   user: process.env.DB_USERNAME,
@@ -27,11 +20,14 @@ const connection = createConnection({
   database: process.env.DB_DATABASE,
 });
 
-//Mensaje de error
 connection.connect(function (err) {
   if (err) {
     console.error('Error de conexion: ' + err.stack);
     return;
   }
   console.log('Conectado con el identificador ' + connection.threadId);
+});
+
+app.listen(PORT, () => {
+  console.log(`servidor en funcionamiento en http://localhost:${PORT}`);
 });
