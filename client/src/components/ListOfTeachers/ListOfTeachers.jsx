@@ -1,5 +1,5 @@
 import teachersData from "./teachersList.json"
-import <AddTeachers></AddTeachers> from "./AddTeachers"
+import AddTeachers from "./AddTeachers"
 function ListOfTeachers() {
   return (
     <section className="p-20 border border-black-300 text-center">
