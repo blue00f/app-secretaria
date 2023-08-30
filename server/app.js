@@ -1,9 +1,11 @@
-import express from 'express';
+import express, { json } from 'express';
+import { corsMiddleware } from './middlewares/cors';
 import { createConnection } from 'mysql2';
 import 'dotenv/config';
 
 const app = express();
-const PORT = process.env.PORT ?? 1234;
+app.use(json());
+app.use(corsMiddleware());
 
 app.get('/', (req, res) => {
   res.send('<h1>HOLA Q TAL</h1>');
@@ -27,6 +29,8 @@ connection.connect(function (err) {
   }
   console.log('Conectado con el identificador ' + connection.threadId);
 });
+
+const PORT = process.env.PORT ?? 1234;
 
 app.listen(PORT, () => {
   console.log(`servidor en funcionamiento en http://localhost:${PORT}`);
