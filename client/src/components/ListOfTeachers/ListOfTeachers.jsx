@@ -1,19 +1,10 @@
 import teachersData from "./teachersList.json"
-
+import AddTeachers from "./AddTeachers"
 function ListOfTeachers() {
   return (
     <section className="p-20 border border-black-300 text-center">
       <div className=" bg-gray-200 p-5 rounded-md">
-        <header className="flex justify-between items-center my-4">
-          <div className="pl-6">
-            <h1 className="text-2xl">Lista de Profesores</h1>
-          </div>
-          <div className="pr-6">
-            <button className=" bg-black w-72 hover:bg-gray-700 text-white font-bold py-2 px-4 border-b-4 border-black hover:border-gray-700 rounded">
-              Agregar Profesores
-            </button>
-          </div>
-        </header>
+        <AddTeachers/>
         <div>
           <div className="grid grid-cols-4 text-lg">
             <p>ID</p>
